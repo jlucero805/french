@@ -3,6 +3,9 @@ var correctScore = 0;
 var incorrectScore = 1;
 var racha = 0;
 
+//musical state
+var musicState = false;
+
 //arrays
 var pronounArray = [' ', 'je', 'tu', 'il/elle/on', 'nous', 'vous', 'ils/elles'];
 
@@ -36,12 +39,13 @@ function submit() {
     var tempText = answer.value;
     var tempLowerCase = String(tempText);
     var tempString = tempLowerCase.toLowerCase();
-    if (tempString == verbsPresentFrench[rand1][0][rand2]) {
+    if (
+        tempString == verbsPresentFrench[rand1][0][rand2] || tempString == "cmd skip") {
         rand1 = Math.floor(Math.random() * (verbsPresentFrench.length));
         rand2 = Math.floor(Math.random() * 7);
         question.innerHTML = verbsPresentFrench[rand1][1][rand2];
         answer.value = "";
-        if (incorrectScore == 1) {
+        if (incorrectScore == 1 && tempString != "cmd skip") {
             correctScore++;
         };
         correct.innerHTML = correctScore;
@@ -58,7 +62,7 @@ function submit() {
         pronouns.innerHTML = pronounArray[rand2];
         if (incorrectScore <= 0) {
             incorrect.innerHTML = "respuesta: " + verbsPresentFrench[rand1][0][rand2];
-        }
+        };
     };
 };
 
@@ -125,8 +129,12 @@ function shiftRight() {
 var musicc = document.getElementById('music')
 
 function clicks() {
-    musicc.play();
-    console.log('music play')
+    musicState = !musicState;
+    if (musicState) {
+        musicc.play();
+    } else if (!musicState) {
+        musicc.pause();
+    };
 };
 
 console.log('end')
