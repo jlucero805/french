@@ -40,7 +40,9 @@ function submit() {
         rand2 = Math.floor(Math.random() * 7);
         question.innerHTML = verbsPresentFrench[rand1][1][rand2];
         answer.value = "";
-        correctScore++;
+        if (incorrectScore == 1) {
+            correctScore++;
+        };
         correct.innerHTML = correctScore;
         incorrectScore = 1;
         incorrect.innerHTML = "intentos: " + incorrectScore;
