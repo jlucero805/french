@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>French Lofi Anime</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
-<body id="body">
+<body id="body" >
+    
     <!-- First section with question and answer -->
-    <div id="parent">
-        <h1 id="question"></h1>
+    <div id="parent" >
+        <h1 id="question" ></h1>
         <div id="score">
             <p id="correct">0</p>
             <p id="incorrect">0</p>
         </div>
         <p id="pronouns">asdfasdf</p>
         <input type="text" id="answer">
-        <button id="enter" onclick="submit()"></button>
+        <button id="enter" onclick="clicks()"></button>
     </div>
     <!-- Change list -->
     <div id="parent2">
@@ -24,6 +26,11 @@
         <div id="mask2"><button id="right" onclick="shiftRight()"><img id="rightArrow" src="arrow.svg" alt="arrow"></button></div>
         <div id="list">10 Verbos comunes en presente</div>
     </div>
+
+    <audio id="music">
+        <source src="music/musicMix.mp3" type="audio/mpeg">
+    </audio>
+    
     <script src="verbs.js"></script>
     <script src="app.js"></script>
 </body>

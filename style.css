@@ -43,6 +43,9 @@ body {
         height: 23px;
         top: 213px;
         left: 275px;
+        background-image: url('musicSymbol.png');
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
     }
 
     #score {

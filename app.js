@@ -121,3 +121,12 @@ function shiftRight() {
         body.style.backgroundImage = "url('frenchGirl.jpg')"
     };
 };
+
+var musicc = document.getElementById('music')
+
+function clicks() {
+    musicc.play();
+    console.log('music play')
+};
+
+console.log('end')
