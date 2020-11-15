@@ -13,7 +13,7 @@ var consoleArray = [];
 
 //random number generator
 var rand1 = Math.floor(Math.random() * (verbsPresentFrench.length));
-var rand2 = Math.floor(Math.random() * 7);
+var rand2 = Math.floor(Math.random() * verbsPresentFrench[0][0].length);
 
 var question = document.getElementById("question");
 var answer = document.getElementById('answer');
@@ -28,7 +28,6 @@ incorrect.innerHTML = "intentos: " + incorrectScore;
 document.addEventListener("keydown", function(e) {
     if (e.key === "Enter") {
         submit();
-        console.log("funciona")
     };
 });
 pronouns.innerHTML = pronounArray[rand2];
@@ -42,7 +41,7 @@ function submit() {
     if (
         tempString == verbsPresentFrench[rand1][0][rand2] || tempString == "cmd skip") {
         rand1 = Math.floor(Math.random() * (verbsPresentFrench.length));
-        rand2 = Math.floor(Math.random() * 7);
+        rand2 = Math.floor(Math.random() * verbsPresentFrench[0][0].length);
         question.innerHTML = verbsPresentFrench[rand1][1][rand2];
         answer.value = "";
         if (incorrectScore == 1 && tempString != "cmd skip") {
