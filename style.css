@@ -1,6 +1,10 @@
 body {
     position: relative;
     background-color: rgb(109, 70, 160);
+    background-image: url('frenchGirl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #parent {
@@ -10,7 +14,7 @@ body {
     height: 250px;
     border: 1px solid black;
     border-radius: 7px;
-    background-color: rgb(148, 144, 144);
+    background-color: rgba(179, 179, 179, 0.836);
 }
 
     #question {
@@ -24,18 +28,19 @@ body {
 
     #answer {
         position: absolute;
-        width: 280px;
-        height: 10px;
+        width: 250px;
+        height: 15px;
         border: 1px solid black;
         top: 215px;
+        left: 15px;
     }
 
     #enter {
         position: absolute;
-        width: 15px;
-        height: 15px;
-        top: 215px;
-        left: 285px;
+        width: 23px;
+        height: 23px;
+        top: 213px;
+        left: 275px;
     }
 
     #score {
@@ -62,3 +67,10 @@ body {
             left: 50px;
             color: red;
         }
+    #pronouns {
+        position: absolute;
+        width: 30px;
+        height: 10px;
+        top: 170px;
+        left: 10px;
+    }
