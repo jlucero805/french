@@ -28,6 +28,7 @@ body {
         height: 10px;
         border: 1px solid black;
         top: 215px;
+        background-color: blue;
     }
 
     #enter {
