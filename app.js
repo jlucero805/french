@@ -132,8 +132,10 @@ function clicks() {
     musicState = !musicState;
     if (musicState) {
         musicc.play();
+        enter.style.backgroundColor = 'green';
     } else if (!musicState) {
         musicc.pause();
+        enter.style.backgroundColor = 'red';
     };
 };
 
