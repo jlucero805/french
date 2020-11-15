@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <!-- First section with question and answer -->
     <div id="parent">
         <h1 id="question"></h1>
@@ -20,8 +20,8 @@
     </div>
     <!-- Change list -->
     <div id="parent2">
-        <div id="mask1"><button id="left"></button></div>
-        <div id="mask2"><button id="right"><img id="rightArrow" src="arrow.svg" alt="arrow"></button></div>
+        <div id="mask1"><button id="left" onclick="shiftLeft()"></button></div>
+        <div id="mask2"><button id="right" onclick="shiftRight()"><img id="rightArrow" src="arrow.svg" alt="arrow"></button></div>
         <div id="list">10 Verbos comunes en presente</div>
     </div>
     <script src="verbs.js"></script>

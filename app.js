@@ -1,6 +1,7 @@
 //vars scores
 var correctScore = 0;
 var incorrectScore = 1;
+var racha = 0;
 
 //arrays
 var pronounArray = [' ', 'je', 'tu', 'il/elle/on', 'nous', 'vous', 'ils/elles'];
@@ -58,5 +59,65 @@ function submit() {
         if (incorrectScore <= 0) {
             incorrect.innerHTML = "respuesta: " + verbsPresentFrench[rand1][0][rand2];
         }
+    };
+};
+
+//shifters
+
+var body = document.getElementById('body');
+
+var girlArray = [
+    0 /*frenchGirl.jpg*/,
+    1 /*aestheticGirl.png*/,
+    2 /*animeGirl.png*/,
+    3 /**balconyGirl.png */,
+    4 /**studyGirl.jpg */
+]
+
+var girlIndex = 0;
+
+function shiftLeft() {
+    var temp;
+    girlIndex--;
+    if (girlIndex == -1) {
+        girlIndex = 4;
+    };
+    if (girlIndex == 4) {
+        body.style.backgroundImage = "url(studyGirl.jpg)";
+    };
+    if (girlIndex == 3) {
+        body.style.backgroundImage = "url('balconyGirl.png')"
+    };
+    if (girlIndex == 2) {
+        body.style.backgroundImage = "url('animeGirl.png')"
+    };
+    if (girlIndex == 1) {
+        body.style.backgroundImage = "url('aestheticGirl.png')"
+    };
+    if (girlIndex == 0) {
+        body.style.backgroundImage = "url('frenchGirl.jpg')"
+    };
+    console.log("click " + girlIndex)
+};
+
+function shiftRight() {
+    girlIndex++;
+    if (girlIndex == 5) {
+        girlIndex = 0;
+    };
+    if (girlIndex == 4) {
+        body.style.backgroundImage = "url(studyGirl.jpg)";
+    };
+    if (girlIndex == 3) {
+        body.style.backgroundImage = "url('balconyGirl.png')"
+    };
+    if (girlIndex == 2) {
+        body.style.backgroundImage = "url('animeGirl.png')"
+    };
+    if (girlIndex == 1) {
+        body.style.backgroundImage = "url('aestheticGirl.png')"
+    };
+    if (girlIndex == 0) {
+        body.style.backgroundImage = "url('frenchGirl.jpg')"
     };
 };
