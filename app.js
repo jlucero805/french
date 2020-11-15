@@ -1,4 +1,4 @@
-//vars
+//vars scores
 var correctScore = 0;
 var incorrectScore = 3;
 
