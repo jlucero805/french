@@ -14,7 +14,7 @@ var nouns2 = [
 
 var nouns3 = [
     [
-        ['poisson', 'boeuf', 'porc', 'poulet']
+        ['poisson', 'boeuf', 'porc', 'poulet'],
         ['pez', 'carne', 'puerco', 'pollo']
     ]
 ];

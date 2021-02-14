@@ -86,19 +86,19 @@ function shiftLeft() {
         girlIndex = 4;
     };
     if (girlIndex == 4) {
-        body.style.backgroundImage = "url(studyGirl.jpg)";
+        body.style.backgroundImage = "url(frenchfoto1.jpg)";
     };
     if (girlIndex == 3) {
-        body.style.backgroundImage = "url('balconyGirl.png')"
+        body.style.backgroundImage = "url('frenchfoto2.png')"
     };
     if (girlIndex == 2) {
-        body.style.backgroundImage = "url('animeGirl.png')"
+        body.style.backgroundImage = "url('frenchfoto3.jpg')"
     };
     if (girlIndex == 1) {
-        body.style.backgroundImage = "url('aestheticGirl.png')"
+        body.style.backgroundImage = "url('frenchfoto4.jpg')"
     };
     if (girlIndex == 0) {
-        body.style.backgroundImage = "url('frenchGirl.jpg')"
+        body.style.backgroundImage = "url('animeGirl.png')"
     };
     console.log("click " + girlIndex)
 };
@@ -109,19 +109,19 @@ function shiftRight() {
         girlIndex = 0;
     };
     if (girlIndex == 4) {
-        body.style.backgroundImage = "url(studyGirl.jpg)";
+        body.style.backgroundImage = "url(frenchfoto1.jpg)";
     };
     if (girlIndex == 3) {
-        body.style.backgroundImage = "url('balconyGirl.png')"
+        body.style.backgroundImage = "url('frenchfoto2.png')"
     };
     if (girlIndex == 2) {
-        body.style.backgroundImage = "url('animeGirl.png')"
+        body.style.backgroundImage = "url('frenchfoto3.jpg')"
     };
     if (girlIndex == 1) {
-        body.style.backgroundImage = "url('aestheticGirl.png')"
+        body.style.backgroundImage = "url('frenchfoto4.jpg')"
     };
     if (girlIndex == 0) {
-        body.style.backgroundImage = "url('frenchGirl.jpg')"
+        body.style.backgroundImage = "url('animeGirl.png')"
     };
 };
 
